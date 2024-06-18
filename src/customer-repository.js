@@ -3,8 +3,8 @@ export async function createCustomer(client, customer) {
   await client.query(sql, [customer.id, customer.name]);
 }
 
-export async function getCustomers(client) {
-  const sql = "SELECT * FROM customers";
-  const result = await client.query(sql);
-  return result.rows;
+export async function getCustomer(client, id) {
+  const sql = "SELECT * FROM customers WHERE id = $1";
+  const result = await client.query(sql, [id]);
+  return result.rows[0];
 }
