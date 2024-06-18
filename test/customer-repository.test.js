@@ -1,5 +1,5 @@
 import { expect } from 'vitest';
-import { createCustomer, getCustomer } from "./customer-repository";
+import { createCustomer, getCustomer } from "../src/customer-repository";
 import { test } from "./test-helper";
 
 test("should create and return multiple customers", async ({ pg }) => {

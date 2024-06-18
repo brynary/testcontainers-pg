@@ -1,6 +1,6 @@
 import { expect } from 'vitest';
 import { test } from "./test-helper";
-import { sum } from "./sum";
+import { sum } from "../src/sum";
 
 test("1", async () => {
     expect(sum(1, 0)).toBe(1);

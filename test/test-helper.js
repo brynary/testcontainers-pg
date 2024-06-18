@@ -1,7 +1,7 @@
 import { test as base } from 'vitest';
 import { Client } from "pg";
 import { PostgreSqlContainer } from "@testcontainers/postgresql";
-import { createCustomerTable } from "./schema";
+import { createCustomerTable } from "../schema";
 // import {Mutex, Semaphore, withTimeout} from 'async-mutex';
 // import { process } from 'node:process';
 
